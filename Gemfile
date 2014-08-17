@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 
 gem 'polymer-rails'
 gem 'polymer-core-rails'
+gem 'polymer-paper-rails'
