@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/alchapone/polymer-core-rails.git
+  revision: c4c565653e69a87f261c8a970deace9e569096d6
+  ref: c4c565653e
+  specs:
+    polymer-core-rails (0.1.0)
+      polymer-rails (~> 0.1.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,8 +63,6 @@ GEM
     minitest (5.4.0)
     multi_json (1.10.1)
     polyglot (0.3.5)
-    polymer-core-rails (0.1.0)
-      polymer-rails (~> 0.1.9)
     polymer-paper-rails (0.1.0)
       polymer-rails (~> 0.1.9)
     polymer-rails (0.1.9)
@@ -127,7 +133,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
-  polymer-core-rails
+  polymer-core-rails!
   polymer-paper-rails
   polymer-rails
   rails (= 4.1.4)

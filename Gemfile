@@ -39,5 +39,5 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'polymer-rails'
-gem 'polymer-core-rails'
+gem 'polymer-core-rails', :git => 'https://github.com/alchapone/polymer-core-rails.git', ref: 'c4c565653e'
 gem 'polymer-paper-rails'
