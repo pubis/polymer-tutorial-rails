@@ -30,7 +30,15 @@
 </head>
 <body unresolved touch-action="auto">
 
-  <%= yield %>
+  <core-header-panel>
+
+    <core-toolbar>
+    </core-toolbar>
+
+    <!-- main page content will go here -->
+    <%= yield %>
+
+  </core-header-panel>
 
 </body>
 </html>
