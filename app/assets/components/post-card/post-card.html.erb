@@ -28,6 +28,15 @@
       border-radius: 50%;
       margin: 10px;
     }
+    core-icon-button {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      fill: #636363;
+    }
+    :host([favorite]) core-icon-button {
+      fill: #da4336;
+    }
     </style>
 
     <!-- CARD CONTENTS GO HERE -->
@@ -35,10 +44,28 @@
       <content select="img"></content>
       <content select="h2"></content>
     </div>
+
+    <core-icon-button
+      id="favicon"
+      icon="favorite"
+      on-tap="{{favoriteTapped}}">
+    </core-icon-button>
+
     <content></content>
 
   </template>
   <script>
-  Polymer({});
+  Polymer({
+    publish: {
+      favorite: {
+        value: false,
+        reflect: true
+      }
+    },
+    favoriteTapped: function(event, detail, sender) {
+      this.favorite = !this.favorite;
+      this.fire('favorite-tap');
+    }
+  });
   </script>
 </polymer-element>
